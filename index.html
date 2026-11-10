@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Extensions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input
+      class="theme-state"
+      type="radio"
+      name="extension-filter"
+      id="filter-all"
+      checked
+    />
+    <input
+      class="theme-state"
+      type="radio"
+      name="extension-filter"
+      id="filter-active"
+    />
+    <input
+      class="theme-state"
+      type="radio"
+      name="extension-filter"
+      id="filter-inactive"
+    />
+    <input
+      class="theme-state"
+      type="checkbox"
+      id="theme-state"
+      aria-label="Use light theme"
+    />
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Extensions home">
+          <img class="brand-logo" src="images/logo.svg" alt="" />
+        </a>
+        <label
+          class="theme-button"
+          for="theme-state"
+          title="Switch color theme"
+        >
+          <img class="sun-icon" src="images/icon-sun.svg" alt="" />
+          <img class="moon-icon" src="images/icon-moon.svg" alt="" />
+        </label>
+      </header>
+
+      <section class="extensions" aria-labelledby="page-title">
+        <div class="section-heading">
+          <h1 id="page-title">Extensions List</h1>
+          <nav class="filters" aria-label="Extension filters">
+            <label class="filter" for="filter-all">All</label>
+            <label class="filter" for="filter-active">Active</label>
+            <label class="filter" for="filter-inactive">Inactive</label>
+          </nav>
+        </div>
+
+        <div class="extension-grid">
+          <article class="extension-card">
+            <div class="card-main">
+              <img class="app-icon" src="images/logo-devlens.svg" alt="" />
+              <div>
+                <h2>DevLens</h2>
+                <p>
+                  Quickly inspect page layouts and visualize element boundaries.
+                </p>
+              </div>
+            </div>
+            <div class="card-controls">
+              <button class="remove-button" type="button">Remove</button
+              ><label class="toggle"
+                ><input
+                  type="checkbox"
+                  checked
+                  aria-label="Enable DevLens" /><span></span
+              ></label>
+            </div>
+          </article>
+          <article class="extension-card">
+            <div class="card-main">
+              <img class="app-icon" src="images/logo-style-spy.svg" alt="" />
+              <div>
+                <h2>StyleSpy</h2>
+                <p>Instantly analyze and copy CSS from any webpage element.</p>
+              </div>
+            </div>
+            <div class="card-controls">
+              <button class="remove-button" type="button">Remove</button
+              ><label class="toggle"
+                ><input
+                  type="checkbox"
+                  checked
+                  aria-label="Enable StyleSpy" /><span></span
+              ></label>
+            </div>
+          </article>
+          <article class="extension-card">
+            <div class="card-main">
+              <img class="app-icon" src="images/logo-speed-boost.svg" alt="" />
+              <div>
+                <h2>SpeedBoost</h2>
+                <p>
+                  Optimizes browser resource usage to accelerate page loading.
+                </p>
+              </div>
+            </div>
+            <div class="card-controls">
+              <button class="remove-button" type="button">Remove</button
+              ><label class="toggle"
+                ><input
+                  type="checkbox"
+                  aria-label="Enable SpeedBoost" /><span></span
+              ></label>
+            </div>
+          </article>
+          <article class="extension-card">
+            <div class="card-main">
+              <img class="app-icon" src="images/logo-json-wizard.svg" alt="" />
+              <div>
+                <h2>JSONWizard</h2>
+                <p>
+                  Formats, validates, and prettifies JSON responses in-browser.
+                </p>
+              </div>
+            </div>
+            <div class="card-controls">
+              <button class="remove-button" type="button">Remove</button
+              ><label class="toggle"
+                ><input
+                  type="checkbox"
+                  checked
+                  aria-label="Enable JSONWizard" /><span></span
+              ></label>
+            </div>
+          </article>
+          <article class="extension-card">
+            <div class="card-main">
+              <img
+                class="app-icon"
+                src="images/logo-tab-master-pro.svg"
+                alt=""
+              />
+              <div>
+                <h2>TabMaster Pro</h2>
+                <p>Organizes browser tabs into groups and sessions.</p>
+              </div>
+            </div>
+            <div class="card-controls">
+              <button class="remove-button" type="button">Remove</button
+              ><label class="toggle"
+                ><input
+                  type="checkbox"
+                  checked
+                  aria-label="Enable TabMaster Pro" /><span></span
+              ></label>
+            </div>
+          </article>
+          <article class="extension-card">
+            <div class="card-main">
+              <img
+                class="app-icon"
+                src="images/logo-viewport-buddy.svg"
+                alt=""
+              />
+              <div>
+                <h2>ViewportBuddy</h2>
+                <p>
+                  Simulates various screen resolutions directly within the
+                  browser.
+                </p>
+              </div>
+            </div>
+            <div class="card-controls">
+              <button class="remove-button" type="button">Remove</button
+              ><label class="toggle"
+                ><input
+                  type="checkbox"
+                  aria-label="Enable ViewportBuddy" /><span></span
+              ></label>
+            </div>
+          </article>
+          <article class="extension-card">
+            <div class="card-main">
+              <img class="app-icon" src="images/logo-markup-notes.svg" alt="" />
+              <div>
+                <h2>Markup Notes</h2>
+                <p>
+                  Enables annotation and notes directly onto webpages for
+                  collaborative debugging.
+                </p>
+              </div>
+            </div>
+            <div class="card-controls">
+              <button class="remove-button" type="button">Remove</button
+              ><label class="toggle"
+                ><input
+                  type="checkbox"
+                  checked
+                  aria-label="Enable Markup Notes" /><span></span
+              ></label>
+            </div>
+          </article>
+          <article class="extension-card">
+            <div class="card-main">
+              <img class="app-icon" src="images/logo-grid-guides.svg" alt="" />
+              <div>
+                <h2>GridGuides</h2>
+                <p>
+                  Overlay customizable grids and alignment guides on any
+                  webpage.
+                </p>
+              </div>
+            </div>
+            <div class="card-controls">
+              <button class="remove-button" type="button">Remove</button
+              ><label class="toggle"
+                ><input
+                  type="checkbox"
+                  aria-label="Enable GridGuides" /><span></span
+              ></label>
+            </div>
+          </article>
+          <article class="extension-card">
+            <div class="card-main">
+              <img
+                class="app-icon"
+                src="images/logo-palette-picker.svg"
+                alt=""
+              />
+              <div>
+                <h2>Palette Picker</h2>
+                <p>Instantly extracts color palettes from any webpage.</p>
+              </div>
+            </div>
+            <div class="card-controls">
+              <button class="remove-button" type="button">Remove</button
+              ><label class="toggle"
+                ><input
+                  type="checkbox"
+                  checked
+                  aria-label="Enable Palette Picker" /><span></span
+              ></label>
+            </div>
+          </article>
+          <article class="extension-card">
+            <div class="card-main">
+              <img class="app-icon" src="images/logo-link-checker.svg" alt="" />
+              <div>
+                <h2>LinkChecker</h2>
+                <p>Scans and highlights broken links on any page.</p>
+              </div>
+            </div>
+            <div class="card-controls">
+              <button class="remove-button" type="button">Remove</button
+              ><label class="toggle"
+                ><input
+                  type="checkbox"
+                  checked
+                  aria-label="Enable LinkChecker" /><span></span
+              ></label>
+            </div>
+          </article>
+          <article class="extension-card">
+            <div class="card-main">
+              <img class="app-icon" src="images/logo-dom-snapshot.svg" alt="" />
+              <div>
+                <h2>DOM Snapshot</h2>
+                <p>Capture and export DOM structures quickly.</p>
+              </div>
+            </div>
+            <div class="card-controls">
+              <button class="remove-button" type="button">Remove</button
+              ><label class="toggle"
+                ><input
+                  type="checkbox"
+                  aria-label="Enable DOM Snapshot" /><span></span
+              ></label>
+            </div>
+          </article>
+          <article class="extension-card">
+            <div class="card-main">
+              <img class="app-icon" src="images/logo-console-plus.svg" alt="" />
+              <div>
+                <h2>ConsolePlus</h2>
+                <p>
+                  Enhanced developer console with advanced filtering and
+                  logging.
+                </p>
+              </div>
+            </div>
+            <div class="card-controls">
+              <button class="remove-button" type="button">Remove</button
+              ><label class="toggle"
+                ><input
+                  type="checkbox"
+                  checked
+                  aria-label="Enable ConsolePlus" /><span></span
+              ></label>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
